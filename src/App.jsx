@@ -5,12 +5,15 @@ import Model from './components/Model';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
-
+import React, { useEffect, useState } from 'react';
 import * as Sentry from '@sentry/react';
+import ScrollView from './components/ScrollView';
 
 const App = () => {
+
   return (
-    <main className="bg-black">
+    <ScrollView>
+      <main className="bg-black">
       <Navbar />
       <Hero />
       <Highlights />
@@ -18,7 +21,9 @@ const App = () => {
       <Features />
       <HowItWorks />
       <Footer />
-    </main>
+      </main>
+    </ScrollView>
+    
   )
 }
 

@@ -25,6 +25,10 @@ Sentry.init({
   replaysOnErrorSampleRate: 1.0, 
 });
 
+document.addEventListener('touchmove', function (event){
+  event.stopImmediatePropagation();
+},{passive: true} );
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
