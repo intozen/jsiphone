@@ -7,12 +7,10 @@ import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
 import React, { useEffect, useState } from 'react';
 import * as Sentry from '@sentry/react';
-import ScrollView from './components/ScrollView';
 
 const App = () => {
 
   return (
-    <ScrollView>
       <main className="bg-black">
       <Navbar />
       <Hero />
@@ -22,7 +20,6 @@ const App = () => {
       <HowItWorks />
       <Footer />
       </main>
-    </ScrollView>
     
   )
 }
